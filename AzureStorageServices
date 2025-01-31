@@ -1,0 +1,55 @@
+Storage account:
+    Space for storage in Azure wich is accessible via HTTP/HTTPS anywhere
+            Locally redundant storage (LRS)
+            Geo-redundant storage (GRS)
+            Read-access geo-redundant storage (RA-GRS)
+            Zone-redundant storage (ZRS)
+            Geo-zone-redundant storage (GZRS)
+            Read-access geo-zone-redundant storage (RA-GZRS)
+
+    Standard general-purpose v2:
+          Blob Storage (including Data Lake Storage), Queue Storage, Table Storage, and Azure Files
+          LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS
+          Recommended for most scenarios using Azure Storage. If you want support for network file system (NFS) in Azure Files, use the premium file shares account type.
+    Premium block blobs:
+          Blob Storage (including Data Lake Storage)
+          LRS, ZRS
+          Recommended for scenarios with high transaction rates or that use smaller objects or require consistently low storage latency.
+    Premium file shares:
+          Azure Files
+          LRS, ZRS
+          Recommended for enterprise or high-performance scale applications. Use this account type if you want a storage account that supports both Server Message Block (SMB) and NFS file shares.
+    Premium page blobs:
+          Page blobs only
+          LRS
+          Premium storage account type for page blobs only
+
+Redundancy:
+    Locally redundant storage (LRS):
+          Replicates your data three times within a single data center in the primary region. LRS provides at least 11 nines of durability (99.999999999%) of objects over a given year.
+    Zone-redundant storage (ZRS):
+          Replicates your Azure Storage data synchronously across three Azure availability zones in the primary region
+    Geo-redundant storage (GRS):
+          Similar to running LRS in two regions
+    Geo-zone-redundant storage (GZRS):
+          Similar to running ZRS in the primary region and LRS in the secondary region
+
+Storage Services:
+    Azure Blobs: 
+          A massively scalable object store for text and binary data. Also includes support for big data analytics through Data Lake Storage Gen2.
+    Azure Files: 
+          Managed file shares for cloud or on-premises deployments.
+    Azure Queues: 
+          A messaging store for reliable messaging between application components.
+    Azure Disks: 
+          Block-level storage volumes for Azure VMs.
+    Azure Tables: 
+          NoSQL table option for structured, non-relational data.
+
+  Azure file movement options:
+    AzCopy:
+        AzCopy is a command-line utility that you can use to copy blobs or files to or from your storage account
+    Azure Storage Explorer:
+        Azure Storage Explorer is a standalone app that provides a graphical interface to manage files and blobs in your Azure Storage Account
+    Azure File Sync:
+        Azure File Sync is a tool that lets you centralize your file shares in Azure Files and keep the flexibility, performance, and compatibility of a Windows file server
