@@ -1,0 +1,54 @@
+Microsoft Entra ID:
+    Microsoft Entra ID is a directory service that enables you to sign in and access both Microsoft cloud applications and cloud applications that you develop. 
+    Microsoft Entra ID can also help you maintain your on-premises Active Directory deployment.
+
+Authentication Methods:
+    Standard user+password:
+    Single sign-on:
+        Enables a user to sign in one time and use that credential to access multiple resources and applications from different providers. 
+        For SSO to work, the different applications and providers must trust the initial authenticator.
+    Multifactor authentication:
+        Prompting a user for an extra form (or factor) of identification during the sign-in process
+    Passwordless authentication:
+        Windows Hello for Business:
+            The biometric and PIN credentials are directly tied to the user's PC, which prevents access from anyone other than the owner
+        Microsoft Authenticator app:
+            You may already be using the Microsoft Authenticator App as a convenient multifactor authentication option in addition to a password. 
+            You can also use the Authenticator App as a passwordless option.
+        FIDO2 security keys:
+            The FIDO (Fast IDentity Online) Alliance helps to promote open authentication standards and reduce the use of passwords as a form of authentication. 
+            FIDO2 is the latest standard that incorporates the web authentication (WebAuthn) standard.
+
+Azure external identities:
+    Business to business (B2B) collaboration:
+        Collaborate with external users by letting them use their preferred identity to sign-in to your Microsoft applications or other enterprise applications
+    B2B direct connect:
+        Establish a mutual, two-way trust with another Microsoft Entra organization for seamless collaboration. B2B direct connect currently supports Teams shared channels, 
+          enabling external users to access your resources from within their home instances of Teams
+    Microsoft Azure Active Directory business to customer (B2C):
+        Publish modern SaaS apps or custom-developed apps (excluding Microsoft apps) to consumers and customers, while using Azure AD B2C for identity and access management.
+
+Role-based access control:
+    Atributes permission to a role, example:
+        admin: can read,write,delete,update,etc...
+        observer: can read
+
+Zero Trust model:
+    Zero Trust is a security model that assumes the worst case scenario and protects resources with that expectation
+    Verify explicitly: 
+        Always authenticate and authorize based on all available data points.
+    Use least privilege access:
+        Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
+    Assume breach:
+        Minimize blast radius and segment access. Verify end-to-end encryption. Use analytics to get visibility, drive threat detection, and improve defenses.
+
+Microsoft Defender for Cloud:
+    Defender for Cloud is a monitoring tool for security posture management and threat protection
+    Continuously assess:
+        Defender for cloud helps you continuously assess your environment. Defender for Cloud includes vulnerability assessment solutions for your virtual machines, container registries, and SQL servers
+    Secure:
+        Defender for Cloud enables you not just to set security policies, but to apply secure configuration standards across your resources.
+    Defend:
+        Defender for Cloud also helps you defend your environment by providing security alerts and advanced threat protection features
+
+
