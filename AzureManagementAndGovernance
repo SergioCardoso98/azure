@@ -25,4 +25,20 @@ Microsoft Cost Management tool:
     Budgets
         A budget is where you set a spending limit for Azure
 
+Microsoft Purview
+    Microsoft Purview is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data
 
+Azure Policy
+    Azure Policy enables you to define both individual policies and groups of related policies, known as initiatives
+    Azure Policies can be set at each level, enabling you to set policies on a specific resource, resource group, subscription, and so on
+    Azure Policy comes with built-in policy and initiative definitions for Storage, Networking, Compute, Security Center, and Monitoring. 
+        For example, if you define a policy that allows only a certain size for the virtual machines (VMs) to be used in your environment, that policy is invoked when you create a new VM
+    In some cases, Azure Policy can automatically remediate noncompliant resources and configurations to ensure the integrity of the state of the resources
+        For example, if all resources in a certain resource group should be tagged with AppName tag and a value of "SpecialOrders," Azure Policy will automatically apply that tag if it is missing
+
+Resource Locks
+    There are two types of resource locks, one that prevents users from deleting and one that prevents users from changing or deleting a resource.
+    Delete 
+        means authorized users can still read and modify a resource, but they can't delete the resource
+    ReadOnly
+        means authorized users can read a resource, but they can't delete or update the resource
