@@ -1,0 +1,56 @@
+Hierchy Example:
+    Azure account
+          |_  Management Group 1
+                    |_ Subscription 1
+                            |_ Resource Group 1
+                                    |_ Resource x
+                    |_ Subscription 2
+                            |_ Resource Group 2
+                                    |_ Resource x
+          |_  Management Group 2
+                    |_ Subscription 3
+                            |_ Resource Group 3
+                                    |_ Resource x
+                
+
+Availability Zones: 
+      Are physically separated data centers within an Azure region, each with independent power, cooling, and networking. 
+      If one zone goes down, the others remain operational, ensuring high availability through private, high-speed fiber networks.
+
+Regions and Region Pairing:
+      Region (Paired with other Region)
+          |_ Disponibility Zone (Paired with other Disponibility Zones within the Region)
+                  |_ Resources (datacenter, cooling, and everything necessary to have a server up and running) 
+                  |_ Resources (datacenter, cooling, and everything necessary to have a server up and running)
+          |_ Disponibility Zone (Paired with other Disponibility Zones within the Region)
+                  |_ Resources (datacenter, cooling, and everything necessary to have a server up and running)
+                  |_ Resources (datacenter, cooling, and everything necessary to have a server up and running)
+
+        Most Azure regions are paired with another region within the same geography (such as the US, Europe, or Asia) at least 300 miles apart. 
+        This approach enables resource replication across geographies to reduce the likelihood of disruptions from events like: 
+                  natural disasters, civil disturbances, power outages, or network interruptions affecting an entire region.
+
+
+        Sovereign Regions:
+              Are isolated instances of Azure. These regions may be required for legal or compliance purposes.
+              Azure's sovereign regions include US DoD Central, US Gov Virginia, and US Gov Iowa, which are isolated instances for U.S. government agencies and partners. 
+              Additionally, China East and China North are available through a partnership between Microsoft and 21Vianet, where Microsoft does not directly operate the data centers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
