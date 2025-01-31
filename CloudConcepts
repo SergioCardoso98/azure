@@ -1,0 +1,27 @@
+Cloud architectures:
+    Software as a service - SaaS - Cloud-based software applications delivered over the internet (office 365, Azure DevOps, PowerBI, etc...)
+    Plattform as a Service - PaaS - Cloud platform for developing, running, and managing applications without managing infra (Azure app service, Azure SQL DB's, etc...)
+    Infrastructure as a Service - IaaS - Cloud computing resources (Azure VMs, Azure blob storage)
+    On-premise - Traditional IT infrastructure and software hosted locally within an organization’s own servers and data centers
+  
+    | Responsibility                      | On-Premise | IaaS       | PaaS      | SaaS       |
+    |----------------------               |------------|------------|-----------|------------|
+    | **Data & Access Management**        | Customer   | Customer   | Customer  | Customer   |
+    | **Applications & Code**             | Customer   | Customer   | Customer  | Microsoft  |
+    | **Operating System (OS)**           | Customer   | Customer   | Microsoft | Microsoft  |
+    | **Middleware** | Customer           | Customer   | Microsoft  | Microsoft | Microsoft  |
+    | **Virtualization**                  | Customer   | Microsoft  | Microsoft | Microsoft  |
+    | **Networking**                      | Customer   | Microsoft  | Microsoft | Microsoft  |
+    | **Storage & Databases**             | Customer   | Microsoft  | Microsoft | Microsoft  |
+    | **Physical Servers & Data Centers** | Customer   | Microsoft  | Microsoft | Microsoft  |
+
+Types of Cloud:
+    Public Cloud – Uses shared cloud resources managed by a provider, accessible over the internet.
+        Examples: Azure Virtual Machines, Azure Blob Storage, Azure App Service
+  
+    Private Cloud – Dedicated cloud resources for one organization, either on-premise or hosted.
+        Examples: Azure Stack Hub, Azure VMware Solution, Azure Dedicated Hosts
+  
+    Hybrid Cloud – Mix of public and private clouds, allowing flexibility and security.
+        Examples: Azure Arc, Azure ExpressRoute, Azure Backup
+
