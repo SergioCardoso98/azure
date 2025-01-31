@@ -1,0 +1,64 @@
+Arc lets you extend your Azure compliance and monitoring to your hybrid and multi-cloud configurations. 
+Azure Arc simplifies governance and management by delivering a consistent multi-cloud and on-premises management platform.
+
+Azure Arc provides a centralized, unified way to:
+    Manage your entire environment together by projecting your existing non-Azure resources into ARM.
+    Manage multi-cloud and hybrid virtual machines, Kubernetes clusters, and databases as if they are running in Azure.
+    Use familiar Azure services and management capabilities, regardless of where they live.
+    Continue using traditional ITOps while introducing DevOps practices to support new cloud and native patterns in your environment.
+    Configure custom locations as an abstraction layer on top of Azure Arc-enabled Kubernetes clusters and cluster extensions.
+
+Azure Resource Manager - ARM
+    With Azure Resource Manager, you can:
+    Manage your infrastructure through declarative templates rather than scripts. A Resource Manager template is a JSON file that defines what you want to deploy to Azure.
+    Deploy, manage, and monitor all the resources for your solution as a group, rather than handling these resources individually.
+    Re-deploy your solution throughout the development life-cycle and have confidence your resources are deployed in a consistent state.
+    Define the dependencies between resources, so they're deployed in the correct order.
+    Apply access control to all services because RBAC is natively integrated into the management platform.
+    Apply tags to resources to logically organize all the resources in your subscription.
+    Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
+
+Infrastructure as code
+    Infrastructure as code is a concept where you manage your infrastructure as lines of code
+
+ARM templates
+    By using ARM templates, you can describe the resources you want to use in a declarative JSON format
+    With an ARM template, the deployment code is verified before any code is run
+
+Bicep
+    Bicep is a language that uses declarative syntax to deploy Azure resources. 
+    A Bicep file defines the infrastructure and configuration. Then, ARM deploys that environment based on your Bicep file. 
+    While similar to an ARM template, which is written in JSON, Bicep files tend to use a simpler, more concise style
+
+Azure Advisor
+    Azure Advisor evaluates your Azure resources and makes recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs
+
+Azure Service Health
+    Azure Service Health helps you keep track of Azure resource, both your specifically deployed resources and the overall status of Azure
+    Azure service health does this by combining three different Azure services
+    Azure Status
+        Broad picture of the status of Azure globally
+    Service Health
+        Provides a narrower view of Azure services and regions
+    Resource Health
+        Is a tailored view of your actual Azure resources
+        Provides information about the health of your individual cloud resources, such as a specific virtual machine instance
+        Using Azure Monitor, you can also configure alerts to notify you of availability changes to your cloud resources.
+
+Azure Monitor
+    Azure Monitor is a platform for collecting data on your resources, analyzing that data, visualizing the information, and even acting on the results
+    https://learn.microsoft.com/en-us/training/wwl-azure/describe-monitoring-tools-azure/media/azure-monitor-overview-614cd2fd.svg
+
+Azure Log Analytics
+    Azure Log Analytics is the tool in the Azure portal where you’ll write and run log queries on the data gathered by Azure Monitor
+Azure Monitor Alerts
+    Azure Monitor Alerts are an automated way to stay informed when Azure Monitor detects a threshold being crossed
+Application Insights
+    Application Insights, an Azure Monitor feature, monitors your web applications
+    Once Application Insights is up and running, you can use it to monitor a broad array of information, such as:
+        Request rates, response times, and failure rates
+        Dependency rates, response times, and failure rates, to show whether external services are slowing down performance
+        Page views and load performance reported by users' browsers
+        AJAX calls from web pages, including rates, response times, and failure rates
+        User and session counts
+        Performance counters from Windows or Linux server machines, such as CPU, memory, and network usage
