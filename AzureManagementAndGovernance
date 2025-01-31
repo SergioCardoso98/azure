@@ -1,0 +1,28 @@
+OpEx cost can be impacted by many factors:
+    Resource type
+    Consumption
+    Maintenance
+        ex: If you deprovision the VM, the additional resources created when the VM was created may not deprovision at the same time
+    Geography
+    Subscription type
+    Azure Marketplace
+
+Pricing calculator:
+    The pricing calculator is designed to give you an estimated cost for provisioning resources in Azure.
+
+TCO calculator:
+    The TCO calculator is designed to help you compare the costs for running an on-premises infrastructure compared to an Azure Cloud infrastructure
+
+Microsoft Cost Management tool:
+    Cost Management provides the ability to quickly check Azure resource costs, create alerts based on resource spend, and create budgets that can be used to automate management of resources.
+    Cost alerts
+        Budget alerts
+            Budget alerts notify you when spending, based on usage or cost, reaches or exceeds the amount defined in the alert condition of the budget
+        Credit alerts
+            Credit alerts notify you when your Azure credit monetary commitments are consumed
+        Department spending quota alerts
+            Department spending quota alerts notify you when department spending reaches a fixed threshold of the quota
+    Budgets
+        A budget is where you set a spending limit for Azure
+
+
